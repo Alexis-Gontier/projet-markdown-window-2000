@@ -1,0 +1,54 @@
+/* =========== VARIABLES TAILWIND =========== */
+/* Color */
+.text-primary {
+    color: var(--color-primary);
+}
+.hover\:text-primary:hover {
+    color: var(--color-secondary);
+}
+.text-secondary {
+    color: var(--color-secondary);
+}
+
+/* Font Size */
+.text-base {
+	font-size: 1rem; /* 16px */
+    line-height: 1.5rem; /* 24px */
+}
+.text-4xl {
+    font-size: 2.25rem; /* 36px */
+    line-height: 2.5rem; /* 40px */
+}
+.text-7xl {
+    font-size: 4.5rem; /* 72px */
+    line-height: 1;
+}
+
+/* Font Weight */
+.font-normal {
+    font-weight: 400;
+}
+.font-bold {
+    font-weight: 700;
+}
+.font-extrabold {
+    font-weight: 800;
+}
+
+/* FlexBox */
+.flex {
+    display: flex;
+}
+.justify-center {
+    justify-content: center;
+}
+.items-center {
+    align-items: center;
+}
+.gap-2 {
+    gap: 0.5rem;
+}
+
+.hover\:underline:hover {
+    text-decoration-line: underline;
+}

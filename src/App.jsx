@@ -8,10 +8,10 @@ function App() {
   return (
     <BrowserRouter>
       <div>
-        <h1>Projet React</h1>
-        <ul>
-          <li><NavLink to="/">Accueil</NavLink></li>
-          <li><NavLink to="/dashboard">Dashboard</NavLink></li>
+        <h1 className="text-7xl font-extrabold">Projet React</h1>
+        <ul className="flex items-center gap-2">
+          <li className="hover:underline hover:text-primary"><NavLink to="/">Accueil</NavLink></li>
+          <li className="hover:underline hover:text-primary"><NavLink to="/dashboard">Dashboard</NavLink></li>
         </ul>
           <Routes>
             <Route path="/" element={<Home />} />

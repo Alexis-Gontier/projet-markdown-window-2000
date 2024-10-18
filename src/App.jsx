@@ -1,7 +1,7 @@
 import './App.css'
 import { BrowserRouter, Link, NavLink, Route, Routes } from 'react-router-dom';
-import Dashboard from './components/page/Dashboard';
-import Home from './components/page/Home';
+import Dashboard from './pages/Dashboard';
+import Home from './pages/Home';
 
 function App() {
 

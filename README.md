@@ -6,16 +6,16 @@
 ## Groupe 4
 
 Membres du groupe :
-    **Alexis Gontier**
+- **Alexis Gontier**
    - Github: [https://github.com/Alexis-Gontier](https://github.com/Alexis-Gontier)
 
-    **Arthur Guillemin**
+- **Arthur Guillemin**
    - Github: [https://github.com/arthurGuillemin](https://github.com/arthurGuillemin)
 
-    **Alexis Hu**
+- **Alexis Hu**
    - Github: [https://github.com/Bagharia](https://github.com/Bagharia)
 
-    **Charles**
+- **Charles**
    - Github: [https://github.com/chary85](https://github.com/chary85)
 
 ## Installation

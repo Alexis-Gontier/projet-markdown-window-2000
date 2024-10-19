@@ -1,7 +1,8 @@
-import './App.css'
+import './styles/App.css'
 import { BrowserRouter, Link, NavLink, Route, Routes } from 'react-router-dom';
 import Dashboard from './pages/Dashboard';
 import Home from './pages/Home';
+import NotFound from './pages/NotFound';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="dashboard" element={<Dashboard />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
       </div>
     </BrowserRouter>

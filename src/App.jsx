@@ -1,4 +1,4 @@
-import './styles/App.css'
+import './styles/tailwind.css'
 import { BrowserRouter, Link, NavLink, Route, Routes } from 'react-router-dom';
 
 // Pages
@@ -8,6 +8,7 @@ import NotFound from './pages/NotFound';
 
 // Layouts
 import MainLayout from './layouts/MainLayout';
+import Taskbar from './layouts/Taskbar';
 
 function App() {
 
@@ -19,6 +20,9 @@ function App() {
         <Route path="dashboard" element={<Dashboard />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+
+      <Taskbar />
+
     </BrowserRouter>
 
   )

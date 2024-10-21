@@ -1,8 +1,10 @@
 /* VARIABLES */
 :root {
-    --bg-color: #f1f5f9;
+    --bg-color: #386FA7;
     --color-primary: #020617;
     --color-secondary: #1e293b;
+
+    --bg-nav: #D7D0C8;
 }
 
 

@@ -7,8 +7,8 @@ import Dashboard from './pages/Dashboard';
 import NotFound from './pages/NotFound';
 
 // Layouts
-import MainLayout from './layouts/MainLayout';
 import Taskbar from './layouts/Taskbar';
+import MainLayout from './layouts/MainLayout';
 
 function App() {
 

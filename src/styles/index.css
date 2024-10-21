@@ -1,15 +1,24 @@
+@font-face {
+    font-family: 'Windows 2000';
+    src: url('./assets/fonts/windows-2000/windows-2000.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* VARIABLES */
 :root {
+    --font-windows-2000: 'Windows 2000', sans-serif;
+
     --bg-color: #386FA7;
     --color-primary: #020617;
     --color-secondary: #1e293b;
-
+    --a: #c7c1ba;
     --bg-nav: #D7D0C8;
 }
 
 
 /* RESET */
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -18,7 +27,7 @@
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
-}
+} */
 
 body {
     font-family: sans-serif;
@@ -26,7 +35,7 @@ body {
     color: var(--color-primary);
     min-height: 100vh;
 }
-
+/*
 ul {
     list-style: none;
 }
@@ -40,4 +49,4 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
-}
+} */

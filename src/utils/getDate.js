@@ -15,4 +15,5 @@ function getDate() {
     const dateFR = date.toLocaleDateString("fr-FR", options);
 
     return dateFR;
+    // 21/10/2024, 13:55:37
 }

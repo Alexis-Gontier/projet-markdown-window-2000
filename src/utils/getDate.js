@@ -9,11 +9,10 @@ export default function getDate() {
         year: undefined,
         hour: 'numeric',
         minute: 'numeric',
-        second: undefined,
+        second: 'numeric',
     };
 
-    const dateFR = date.toLocaleDateString("fr-FR", options);
+    const dateFR = date.toLocaleTimeString("fr-FR", options);
 
     return dateFR;
-    // 21/10/2024, 13:55:37
 }

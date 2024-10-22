@@ -3,8 +3,6 @@ import Line from '../components/ui/Taskbar/Line'
 import Icons from '../components/ui/Taskbar/Icons'
 import Clock from '../components/ui/Taskbar/Clock'
 
-import getDate from '../utils/getDate'
-
 function Taskbar() {
   return (
     <header className="z-100 bg-nav fixed left-0 bottom-0 w-full h-12 p-1 border-t-[3px] border-[#fff] shadow-[0px_-3px_0px_0px_#D7D0C8]">
@@ -16,7 +14,7 @@ function Taskbar() {
             <Line />
           </div>
           <div className="w-full h-full flex justify-end items-center">
-            <Clock hour={getDate()} />
+            <Clock />
           </div>
         </nav>
     </header>

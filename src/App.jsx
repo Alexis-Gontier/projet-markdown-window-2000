@@ -10,6 +10,9 @@ import NotFound from './pages/NotFound';
 import MainLayout from './layouts/MainLayout';
 import CatFactDuJour from './components/api/Cats';
 import TrueFalseDuJour from './components/api/TrueFalse';
+import BitcoinPrice from './components/api/Bitcoin';
+import IssPositionNow from './components/api/IssPosition';
+import PlusOuMoins from './components/api/PlusOuMoins';
 
 function App() {
 
@@ -21,8 +24,6 @@ function App() {
         <Route path="dashboard" element={<Dashboard />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-      <CatFactDuJour/>
-      <TrueFalseDuJour/>
     </BrowserRouter>
 
   )

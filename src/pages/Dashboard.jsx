@@ -1,16 +1,12 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import Interface from '../components/ui/Gestionnaire de fichiers/Interface'
 
-function Dashboard(props) {
+function Dashboard() {
   return (
-    <div>
-      Dashboard
+    <div className="min-h-screen flex justify-center items-center">
+
+      <Interface />
     </div>
   )
-}
-
-Dashboard.propTypes = {
-
 }
 
 export default Dashboard

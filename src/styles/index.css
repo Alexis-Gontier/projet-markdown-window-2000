@@ -7,7 +7,7 @@
 
 /* VARIABLES */
 :root {
-    --font-windows-2000: 'Windows 2000', sans-serif;
+    --font-windows-2000: 'Windows 2000';
 
     --bg-color: #386FA7;
     --color-primary: #020617;
@@ -30,7 +30,7 @@ html {
 } */
 
 body {
-    font-family: sans-serif;
+    font-family: var(--font-windows-2000);
     background-color: var(--bg-color);
     color: var(--color-primary);
     min-height: 100vh;

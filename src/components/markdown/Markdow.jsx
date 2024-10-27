@@ -5,7 +5,7 @@ import { marked } from "marked";
 
 
 function Markdown() {
-    const [input, setInput] = useState('');
+    const [input, setInput] = useState('# test');
 
     function gererInput(e) {
         const nouvelleValeur = e.target.value;
@@ -14,10 +14,10 @@ function Markdown() {
 
     return (
         <div id="content">
-            <textarea 
+            <textarea
                 value={input}
                 onChange={gererInput}
-                rows="10" 
+                rows="10"
                 cols="500"
             />
             <div style={{border: '1px solid #CCC', borderRadius: '3px', minHeight: "150px"}} dangerouslySetInnerHTML={{ __html: marked.parse(input) }} />

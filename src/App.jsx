@@ -24,7 +24,7 @@ function App() {
         <Route path="*" element={<NotFound />} />
       </Routes>
 
-      {/* <Taskbar /> */}
+      <Taskbar />
 
     </BrowserRouter>
 

@@ -1,19 +1,7 @@
 // function pour la date
 
-function getDate() {
+export default function getDate(options) {
     const date = new Date();
-    const options = {
-        weekday: undefined,
-        day: 'numeric',
-        month: 'numeric',
-        year: 'numeric',
-        hour: 'numeric',
-        minute: 'numeric',
-        second: 'numeric',
-    };
-
-    const dateFR = date.toLocaleDateString("fr-FR", options);
-
+    const dateFR = date.toLocaleTimeString("fr-FR", options);
     return dateFR;
-    // 21/10/2024, 13:55:37
 }

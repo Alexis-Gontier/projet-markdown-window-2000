@@ -1,17 +1,9 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import ModalAPI from "../components/ui/ModalAPI"
 
-function Home(props) {
+export default function Home(props) {
   return (
-    <div>
-      Home
+    <div className="min-h-screen flex justify-center items-center">
+      <ModalAPI />
     </div>
   )
 }
-
-Home.propTypes = {
-
-}
-
-export default Home
-

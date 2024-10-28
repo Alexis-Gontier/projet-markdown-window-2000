@@ -1,4 +1,5 @@
 import { BrowserRouter, Link, NavLink, Route, Routes } from 'react-router-dom';
+import PopAPI from '../components/api/PopAPI'
 
 export default function MainLayout() {
   return (
@@ -7,6 +8,9 @@ export default function MainLayout() {
           <li className="hover:underline"><NavLink to="/">Home</NavLink></li>
           <li className="hover:underline"><NavLink to="/dashboard">Dashboard</NavLink></li>
         </ul>
+        <div>
+          <PopAPI />
+        </div>
     </>
   )
 }

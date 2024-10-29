@@ -1,0 +1,23 @@
+.pop-up {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    z-index: 50;
+    opacity: 0; 
+    transition: opacity 0.5s ease-in-out; 
+}
+
+.pop-up.visible {
+    opacity: 1; 
+    animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translate(-50%, -60%) translateY(-30px);
+        opacity: 0;
+    }
+    to {
+        transform: translate(-50%, -50%) translateY(0);
+        opacity: 1;
+    }
+}

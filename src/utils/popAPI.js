@@ -1,17 +1,13 @@
 import Bitcoin from '../components/api/Bitcoin'
 import Cats from '../components/api/Cats'
-import Events from '../components/api/Events'
 import issPosition from '../components/api/issPosition'
-import Joke from '../components/api/Joke'
-import Mocktail from '../components/api/Mocktail'
+import TrueFalse from '../components/api/TrueFalse'
 
 const COMPONENTS = [
     Bitcoin,
     Cats,
-    Events,
     issPosition,
-    Joke,
-    Mocktail,
+    TrueFalse
 ]
 
 function nbrRandom(max) {

@@ -3,16 +3,14 @@ import popAPI from "../../utils/popAPI";
 import '../../styles/popup.css';
 
 export default function PopAPI() {
-    const [visible, setVisible] = useState(false); // Le pop-up est caché par défaut
-    const { positionX, positionY, ComponentRandom } = popAPI(); // Récupérer les positions
+    const [visible, setVisible] = useState(false); 
+    const { positionX, positionY, ComponentRandom } = popAPI(); 
 
     useEffect(() => {
-        // Définir un délai aléatoire entre 5 et 10 secondes
         const timeout = setTimeout(() => {
-            setVisible(true); // Rendre le pop-up visible
-        }, Math.floor(Math.random() * (5000)) + 5000); // 5000 ms (5s) à 10000 ms (10s)
+            setVisible(true); 
+        }, Math.floor(Math.random() * (5000)) + 5000); 
 
-        // Nettoyer le timeout à la désinstallation du composant
         return () => clearTimeout(timeout);
     }, []);
 

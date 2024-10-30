@@ -3,13 +3,24 @@ import { fetchQuestionApi } from '../../services/TrueFalseService';
 
 const TrueFalseDuJour = () => {
   const [question, setQuestion] = useState(null);
+  const [feedback, setFeedback] = useState(""); 
+
   const fetchQuestion = async () => {
-    const data = await fetchQuestionApi(); 
-    setQuestion(data.results[0]); 
+    const data = await fetchQuestionApi();
+    setQuestion(data.results[0]);
   };
+
   useEffect(() => {
-    fetchQuestion(); 
+    fetchQuestion();
   }, []);
+
+  const handleAnswer = (answer) => {
+    if (answer === question.correct_answer) {
+      setFeedback(`Bien joué, c'est ${answer === "True" ? "vrai" : "faux"} !`);
+    } else {
+      setFeedback(`Dommage , c'est ${question.correct_answer === "True" ? "vrai" : "faux"} !`);
+    }
+  };
 
   return (
     <div>
@@ -17,7 +28,10 @@ const TrueFalseDuJour = () => {
       {question && (
         <div>
           <p>Question : {question.question}</p>
-          <p>Réponse : {question.correct_answer}</p>
+          <button onClick={() => handleAnswer("True")}>Vrai</button>
+          <button onClick={() => handleAnswer("False")}>Faux</button>
+          
+          {feedback && <p>{feedback}</p>}
         </div>
       )}
     </div>

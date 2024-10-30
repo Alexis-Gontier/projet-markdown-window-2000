@@ -9,7 +9,7 @@ export default function PopAPI() {
     useEffect(() => {
         const timeout = setTimeout(() => {
             setVisible(true);
-        }, Math.floor(Math.random() * 5000) + 5000);
+        }, Math.floor(Math.random() * 5000) + 15000);
 
         return () => clearTimeout(timeout);
     }, []);

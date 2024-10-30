@@ -9,6 +9,7 @@ export default function MainLayout() {
           <li className="hover:underline"><NavLink to="/dashboard">Dashboard</NavLink></li>
         </ul>
         <div>
+          <PopAPI />
         </div>
     </>
   )

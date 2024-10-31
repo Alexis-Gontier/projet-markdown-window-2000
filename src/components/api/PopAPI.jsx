@@ -7,11 +7,22 @@ export default function PopAPI() {
     const { positionX, positionY, ComponentRandom } = popAPI();
 
     useEffect(() => {
-        const timeout = setTimeout(() => {
+        const showPopup = () => {
             setVisible(true);
-        }, Math.floor(Math.random() * 5000) + 15000);
+        };
 
-        return () => clearTimeout(timeout);
+        const hidePopup = () => {
+            setVisible(false);
+        };
+        const startPopupInterval = () => {
+            const interval = setInterval(() => {
+                showPopup();
+                setTimeout(hidePopup, 50000); 
+            }, Math.floor(Math.random() * (75000 - 45000 + 1)) + 45000); 
+            return interval;
+        };
+        const intervalId = startPopupInterval();
+        return () => clearInterval(intervalId); 
     }, []);
 
     return (
@@ -33,6 +44,7 @@ export default function PopAPI() {
         </div>
     );
 }
+
 function ModalAPI({ children, onClose }) {
     return (
         <div className="relative w-96 bg-[#D7D0C8] border border-red-500 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-px after:bg-[#000]">

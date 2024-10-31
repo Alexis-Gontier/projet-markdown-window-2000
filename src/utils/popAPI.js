@@ -11,11 +11,12 @@ const COMPONENTS = [
 ];
 
 const POSITIONS = [
-    { positionX: 900, positionY: 100 },
-    { positionX: 450, positionY: 150 },
-    { positionX: 600, positionY: 250 },
-    { positionX: 600, positionY: 250 },
-    { positionX: 700, positionY: 650 },
+    { positionX: 250, positionY: 100 },
+    { positionX: 400, positionY: 200 },
+    { positionX: 800, positionY: 200 },
+    { positionX: 350, positionY: 450 },
+    { positionX: 1240, positionY: 580 },
+    { positionX: 200, positionY: 580 },
 ];
 
 function nbrRandom(max) {

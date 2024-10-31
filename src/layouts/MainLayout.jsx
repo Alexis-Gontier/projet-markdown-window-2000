@@ -10,7 +10,6 @@ export default function MainLayout() {
         </ul>
         <div>
           <PopAPI />
-          <PopAPI />
         </div>
     </>
   )

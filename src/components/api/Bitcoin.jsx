@@ -17,6 +17,7 @@ const BitcoinPrice = () => {
     <div className="relative w-96 bg-[#D7D0C8] border border-red-500 animate-slideIn after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-px after:bg-[#000]">
       <div className="p-px">
         <div className="w-full h-full flex flex-col items-center p-4">
+        <h2 className="text-lg font-bold text-center">Valeur du bitcoin:</h2>
           <h3 className="text-lg font-bold">En EUR :</h3>
           <p>1 Bitcoin = {bitcoinData && bitcoinData.EUR.rate} €</p>
           <h3 className="text-lg font-bold">En USD :</h3>

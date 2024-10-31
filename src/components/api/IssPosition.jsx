@@ -19,11 +19,11 @@ const IssPositionNow = () => {
 
   return (
     <div>
-      <h2>Position actuelle de l'ISS :</h2>
+      <h2 className="text-lg font-bold text-center">Position actuelle de l'ISS :</h2>
       {issPosition && (
-        <div>
-          <p>Latitude : {issPosition.latitude}</p>
-          <p>Longitude : {issPosition.longitude}</p>
+        <div className="flex justify-between item-center space-x-4">
+          <p className="font-bold">Latitude : {issPosition.latitude}</p>
+          <p className="font-bold">Longitude : {issPosition.longitude}</p>
         </div>
       )}
     </div>

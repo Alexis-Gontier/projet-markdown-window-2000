@@ -16,7 +16,7 @@ const CatFactDuJour = () => {
 
   return (
     <div>
-      <h2>Le fait du jour sur les chats :</h2>
+      <h2 className="text-lg font-bold text-center">Le fait du jour sur les chats :</h2>
       {fact && (
         <div>
           <p>{fact.fact}</p>

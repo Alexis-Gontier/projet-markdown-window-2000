@@ -21,6 +21,7 @@ const CitationDuJour = () => {
           <button onClick={fetchCitation} className="text-white">↻</button>
         </div>
         <div className="w-full h-full flex flex-col items-center p-4">
+        <h2 className="text-lg font-bold text-center">La citattion du jour :</h2>
           {citation && <p className="text-center">{citation}</p>}
         </div>
       </div>

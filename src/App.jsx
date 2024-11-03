@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Dashboard from './pages/Dashboard';
 import DashboardID from './pages/DashboardID';
 import NotFound from './pages/NotFound';
+import Game from './pages/PlusOuMoins';
 
 // Layouts
 import Taskbar from './layouts/Taskbar';
@@ -21,9 +22,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="dashboard" element={<Dashboard />} />
         <Route path="dashboard/:id" element={<DashboardID />} />
+        <Route path="game" element={<Game />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-
       <Taskbar />
 
     </BrowserRouter>

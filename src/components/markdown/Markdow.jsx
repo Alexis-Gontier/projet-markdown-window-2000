@@ -9,11 +9,11 @@ function Markdown() {
     const [input, setInput] = useState('');
 
     useEffect(() => {
-        const contenuSauvegarde = localStorage.getItem(`markdown-${id}`);
+        const contenuSauvegarde = localStorage.getItem(`${id}`);
         if (contenuSauvegarde) {
             setInput(contenuSauvegarde);
         } else {
-            setInput('# test');
+            setInput(''); 
         }
     }, [id]);
 
@@ -23,12 +23,13 @@ function Markdown() {
     }
 
     function sauvegarderInput() {
-        localStorage.setItem(`markdown-${id}`, input);
+        let count = 0 
+        localStorage.setItem(`${id}`, input);
         alert("Contenu sauvegardé");
     }
 
     function supprimerInput() {
-        localStorage.removeItem(`markdown-${id}`);
+        localStorage.removeItem(`${id}`);
         setInput(''); 
         alert("Contenu supprimé");
     }
@@ -55,6 +56,9 @@ function Markdown() {
                     </h2>
                     <Link to={"/dashboard"} className="group bg-[#D7D0C8] max-h-full px-2 flex justify-center items-center gap-1 border-2 border-t-[#fff] border-r-[#808080] border-b-[#808080] border-l-[#fff] shadow-[1px_1px_0px_1px_#000] focus:bg-[#c7c1ba] focus:border-t-[#808080] focus:border-r-[#fff] focus:border-b-[#fff] focus:border-l-[#808080] focus:shadow-[0px_0px_0px_0px_#000] focus:translate-x-px focus:translate-y-px">x</Link>
                 </div>
+                <div>
+                    
+                </div>
                 <div className="bg-[#babfc3] flex items-center gap-1 p-1">
                     <div className="h-full w-1.5 mr-4 bg-[#D7D0C8] flex border-2 border-t-[#fff] border-r-[#808080] border-b-[#808080] border-l-[#fff]"></div>
                     <button onClick={sauvegarderInput} className="hover:underline">Sauvegarder</button>
@@ -67,7 +71,7 @@ function Markdown() {
                         id="file-input"
                     />
 
-                    <label htmlFor="file-input" className="hover:underline cursor-pointer">
+                    <label for="file-input" class="hover:underline cursor-pointer">
                         Téléchargez un fichier Markdown
                     </label>
 

@@ -12,11 +12,11 @@ import IconDashboard from "../components/ui/Icon/IconDashboard"
 export default function Home() {
   return (
     <div className="min-h-screen flex justify-center items-center">
-    {/* <CitationDuJour/>
+    <CitationDuJour/>
     <BlagueDuJour/>
     <EventsDuJour/>
     <MocktailDuJour/>
-    <RecetteDuJour/> */}
+    <RecetteDuJour/>
     </div>
   )
 }

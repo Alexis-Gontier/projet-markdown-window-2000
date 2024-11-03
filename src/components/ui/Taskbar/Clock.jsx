@@ -7,7 +7,7 @@ export default function Clock() {
   const options = {
     hour: '2-digit',
     minute: '2-digit',
-    second: '2-digit'
+    // second: '2-digit'
   };
 
   const [clock, setClock] = useState(getDate(options));
@@ -15,7 +15,7 @@ export default function Clock() {
   useEffect(() => {
     const objetInterval = setInterval(() => {
       setClock(getDate(options));
-    }, 1000);
+    }, 60000);
 
     return () => clearInterval(objetInterval);
   }, []);

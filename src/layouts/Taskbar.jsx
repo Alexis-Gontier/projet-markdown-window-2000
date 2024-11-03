@@ -1,6 +1,6 @@
 import Btn from '../components/ui/Taskbar/Btn'
 import LogoWindows from '../assets/images/logo-windows-2000.png'
-import IconSpeaker from '../assets/images/speaker.png'
+// import IconSpeaker from '../assets/images/speaker.png'
 import Line from '../components/ui/Taskbar/Line'
 import Icons from '../components/ui/Taskbar/Icons'
 import Clock from '../components/ui/Taskbar/Clock'
@@ -23,7 +23,7 @@ function Taskbar() {
             <Line />
             <Icons />
             <Line />
-            <Btn>
+            {/* <Btn>
               <img
                 className="h-full"
                 src={IconSpeaker}
@@ -42,7 +42,7 @@ function Taskbar() {
               <span className="text-base font-normal w-48 text-start">
                 My Documents
               </span>
-            </Btn>
+            </Btn> */}
           </div>
           <div className="h-full flex justify-end items-center">
             <Clock />

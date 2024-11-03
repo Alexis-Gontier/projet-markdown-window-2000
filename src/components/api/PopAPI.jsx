@@ -18,12 +18,12 @@ export default function PopAPI() {
         const startPopupInterval = () => {
             const interval = setInterval(() => {
                 showPopup();
-                setTimeout(hidePopup, 50000); 
-            }, Math.floor(Math.random() * (75000 - 45000 + 1)) + 45000); 
+                setTimeout(hidePopup, 50000);
+            }, Math.floor(Math.random() * (45000 - 30000 + 1)) + 30000);
             return interval;
         };
         const intervalId = startPopupInterval();
-        return () => clearInterval(intervalId); 
+        return () => clearInterval(intervalId);
     }, []);
 
     return (

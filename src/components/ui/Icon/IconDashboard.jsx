@@ -1,5 +1,4 @@
 import Icon from "./Icon";
-import speaker from "../../../assets/images/speaker.png";
 import GameIcon from "../../../assets/images/GameIcon.png";
 import Explorer from "../../../assets/images/Explorer.png";
 import Home from "../../../assets/images/Home.png";

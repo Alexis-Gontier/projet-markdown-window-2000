@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { fetchJokeApi } from '../../services/JokeService';
 
 const BlagueDuJour = () => {
@@ -23,7 +23,7 @@ const BlagueDuJour = () => {
         <div className="w-full h-full flex flex-col items-center p-4">
           {blague && (
             <>
-            <h2 className="text-lg font-bold text-center">La blague du jour :</h2>            
+            <h2 className="text-lg font-bold text-center">La blague du jour :</h2>
               <p className="text-center">{blague.setup}</p>
               <p className="text-center font-bold">{blague.punchline}</p>
             </>

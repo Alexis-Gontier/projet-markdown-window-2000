@@ -5,10 +5,17 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'MS Sans Serif bold';
+    src: url('./assets/fonts/ms-sans-serif/MS Sans Serif Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* VARIABLES */
 :root {
     --font-windows-2000: 'MS Sans Serif';
-
+    --font-windows-2000-bold: 'MS Sans Serif bold';
     --bg-color: #386FA7;
     --color-primary: #020617;
     --color-secondary: #1e293b;
@@ -50,3 +57,7 @@ img {
     max-width: 100%;
     height: auto;
 } */
+
+.gras {
+    font-family: var(--font-windows-2000-bold);
+}

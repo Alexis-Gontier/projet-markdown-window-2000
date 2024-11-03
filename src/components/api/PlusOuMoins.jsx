@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { fetchCardApi } from '../../services/DeckService';
 
 
-// Jeu du plus ou moins avce des cartes 
+// Jeu du plus ou moins avce des cartes
 const PlusOuMoins = () => {
   const [currentCard, setCurrentCard] = useState(null);
   const [message, setMessage] = useState("");
@@ -24,7 +24,7 @@ const PlusOuMoins = () => {
     "QUEEN": 12,
     "KING": 13
   };
-  
+
   const CardColor = {
     "CLUBS": "Trèfle",
     "DIAMONDS": "Carreau",
@@ -50,7 +50,7 @@ const PlusOuMoins = () => {
     const nextCard = await fetchNewCard();
     const currentCardValue = cardNumbers[currentCard.value];
     const nextCardValue = cardNumbers[nextCard.value];
-    if ((guess === "plus" && nextCardValue > currentCardValue) || 
+    if ((guess === "plus" && nextCardValue > currentCardValue) ||
         (guess === "moins" && nextCardValue < currentCardValue)) {
       setMessage("Bien joué !");
       setScore(score + 1);
@@ -59,7 +59,7 @@ const PlusOuMoins = () => {
       }
     } else {
       setMessage(` Mauvaise réponse , l a carte était ${cardNumbers[nextCard.value]} de ${CardColor[nextCard.suit]}.`);
-      setScore(0); 
+      setScore(0);
     }
     setCurrentCard(nextCard);
   };
@@ -71,7 +71,7 @@ const PlusOuMoins = () => {
     const MoinsClick = () => Game("moins");
     plusBtn.onclick = PlusClick;
     moinsBtn.onclick = MoinsClick;
-  },);  
+  },);
 
 
 

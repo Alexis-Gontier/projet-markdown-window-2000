@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { fetchIssPositionApi } from '../../services/IssPositionService';
 
 const IssPositionNow = () => {
@@ -19,7 +19,7 @@ const IssPositionNow = () => {
 
   return (
     <div className="min-h-10">
-      <h2 className="text-lg font-bold text-center">Position actuelle de l'ISS :</h2>
+      <h2 className="text-lg font-bold text-center">Position actuelle de l&apos;ISS :</h2>
       {issPosition && (
         <div className="flex justify-between item-center space-x-4">
           <p className="font-bold">Latitude : {issPosition.latitude}</p>

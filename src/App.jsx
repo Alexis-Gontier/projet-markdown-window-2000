@@ -1,5 +1,5 @@
 import './styles/tailwind.css'
-import { BrowserRouter, Link, NavLink, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 // Pages
 import Home from './pages/Home';

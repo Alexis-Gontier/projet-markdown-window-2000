@@ -1,4 +1,5 @@
-import { BrowserRouter, Link, NavLink, Route, Routes } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 export default function Icon({ image, text, link, style }) {
   return (
@@ -8,3 +9,10 @@ export default function Icon({ image, text, link, style }) {
     </Link>
   )
 }
+
+Icon.propTypes = {
+  image: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
+  style: PropTypes.string,
+};

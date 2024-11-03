@@ -11,4 +11,5 @@ export default function Icon({ children, link }) {
 
 Icon.propTypes = {
   children: PropTypes.node.isRequired,
+  link: PropTypes.string.isRequired,
 };

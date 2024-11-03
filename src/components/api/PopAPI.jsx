@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import popAPI from "../../utils/popAPI";
 import '../../styles/popup.css';
-
-import btn from '../ui/Taskbar/Btn'
+import PropTypes from 'prop-types';
 
 export default function PopAPI() {
     const [visible, setVisible] = useState(false);
@@ -62,3 +61,8 @@ function ModalAPI({ children, onClose }) {
         </div>
     );
 }
+
+ModalAPI.propTypes = {
+    children: PropTypes.node.isRequired,
+    onClose: PropTypes.func.isRequired,
+};

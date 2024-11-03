@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { fetchQuoteApi } from "/src/services/QuoteService.js"; 
 
 const CitationDuJour = () => {

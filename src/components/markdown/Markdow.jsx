@@ -13,7 +13,7 @@ function Markdown() {
         if (contenuSauvegarde) {
             setInput(contenuSauvegarde);
         } else {
-            setInput('# test'); 
+            setInput('# test');
         }
     }, [id]);
 
@@ -67,7 +67,7 @@ function Markdown() {
                         id="file-input"
                     />
 
-                    <label for="file-input" class="hover:underline cursor-pointer">
+                    <label htmlFor="file-input" className="hover:underline cursor-pointer">
                         Téléchargez un fichier Markdown
                     </label>
 

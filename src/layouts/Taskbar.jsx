@@ -7,7 +7,7 @@ import Clock from '../components/ui/Taskbar/Clock'
 
 function Taskbar() {
   return (
-    <header className="z-100 bg-nav fixed left-0 bottom-0 w-full h-12 p-1 border-t-[3px] border-[#fff] shadow-[0px_-3px_0px_0px_#D7D0C8]">
+    <header className="z-10 bg-nav fixed left-0 bottom-0 w-full h-12 p-1 border-t-[3px] border-[#fff] shadow-[0px_-3px_0px_0px_#D7D0C8]">
         <nav className="w-full h-full flex justify-between items-center">
           <div className=" h-full flex items-center gap-2">
             <Btn>
@@ -23,7 +23,7 @@ function Taskbar() {
             <Line />
             <Icons />
             <Line />
-            {/* <Btn>
+            <Btn>
               <img
                 className="h-full"
                 src={IconSpeaker}
@@ -42,7 +42,7 @@ function Taskbar() {
               <span className="text-base font-normal w-48 text-start">
                 My Documents
               </span>
-            </Btn> */}
+            </Btn>
           </div>
           <div className="h-full flex justify-end items-center">
             <Clock />

@@ -1,14 +1,15 @@
 import Icon from "./Icon"
-import speaker from "../../../assets/images/speaker.png"
+import GameIcon from "../../../assets/images/GameIcon.png";
+import Explorer from "../../../assets/images/Explorer.png";
 
 export default function Icons() {
   return (
     <div className="h-full flex">
       <Icon link={"/dashboard"}>
-        <img src={speaker} alt="" className="h-full" />
+        <img src={Explorer} alt="" className="h-full" />
       </Icon>
-      <Icon link={"/dashboard"}>
-        <img src={speaker} alt="" className="h-full" />
+      <Icon link={"/game"}>
+        <img src={GameIcon} alt="" className="h-full" />
       </Icon>
     </div>
   )

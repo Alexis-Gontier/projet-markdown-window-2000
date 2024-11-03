@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 
 export default function ModalAPI({ children }) {
   return (
@@ -8,14 +9,13 @@ export default function ModalAPI({ children }) {
                 <button>x</button>
             </div>
             <div className="w-full h-full flex flex-col items-center">
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
+                {children}
             </div>
         </div>
     </div>
   )
 }
+
+ModalAPI.propTypes = {
+  children: PropTypes.node.isRequired,
+};

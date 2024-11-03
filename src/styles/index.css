@@ -1,13 +1,13 @@
 @font-face {
-    font-family: 'Windows 2000';
-    src: url('./assets/fonts/windows-2000/windows-2000.ttf') format('truetype');
+    font-family: 'MS Sans Serif';
+    src: url('./assets/fonts/ms-sans-serif/MS Sans Serif.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 /* VARIABLES */
 :root {
-    --font-windows-2000: 'Windows 2000';
+    --font-windows-2000: 'MS Sans Serif';
 
     --bg-color: #386FA7;
     --color-primary: #020617;

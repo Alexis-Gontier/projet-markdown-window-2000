@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { marked } from "marked";
 import { Link } from 'react-router-dom'
-
+import DownloadMarkdown from '../markdown/DownloadMarkdown'
+import Line from '../ui/Taskbar/Line'
 
 
 function Markdown() {
@@ -21,16 +22,17 @@ function Markdown() {
                     </h2>
                     <Link to={"/dashboard"} className="group bg-[#D7D0C8] max-h-full px-2 flex justify-center items-center gap-1 border-2 border-t-[#fff] border-r-[#808080] border-b-[#808080] border-l-[#fff] shadow-[1px_1px_0px_1px_#000] focus:bg-[#c7c1ba] focus:border-t-[#808080] focus:border-r-[#fff] focus:border-b-[#fff] focus:border-l-[#808080] focus:shadow-[0px_0px_0px_0px_#000] focus:translate-x-px focus:translate-y-px">x</Link>
                 </div>
-                <div>
-                    aaa
+                <div className="bg-[#babfc3] flex gap-1 p-1">
+                    <div className="h-full w-1.5 mr-4 bg-[#D7D0C8] flex border-2 border-t-[#fff] border-r-[#808080] border-b-[#808080] border-l-[#fff]"></div>
+                    <DownloadMarkdown />
                 </div>
                 <div id="content" className="w-full h-full flex gap-1">
                     <textarea
                         value={input}
                         onChange={gererInput}
-                        className="w-1/2 resize-none p-4"
+                        className="w-1/2 resize-none p-4 focus:outline-none focus:ring-0 focus:shadow-none"
                     />
-                    <div dangerouslySetInnerHTML={{ __html: marked.parse(input) }} className="w-1/2 bg-red-500" />
+                    <div dangerouslySetInnerHTML={{ __html: marked.parse(input) }} className="w-1/2 bg-white p-4 overflow-scroll markdown-body" />
                 </div>
             </div>
         </div>

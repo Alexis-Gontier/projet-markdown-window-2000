@@ -1,13 +1,14 @@
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom'
 
-export default function Icon({ children }) {
+export default function Icon({ children, link }) {
   return (
-    <button className="h-full p-1 flex justify-center items-center border-2 border-transparent hover:border-t-[#fff] hover:border-r-[#808080] hover:border-b-[#808080] hover:border-l-[#fff]">
+    <Link to={link} className="h-full p-1 flex justify-center items-center border-2 border-transparent hover:border-t-[#fff] hover:border-r-[#808080] hover:border-b-[#808080] hover:border-l-[#fff]">
       {children}
-    </button>
+    </Link>
   )
 }
 
 Icon.propTypes = {
-  children: PropTypes.node.isRequired, // 'children' doit être un élément React (texte, composant, etc.) et obligatoire
+  children: PropTypes.node.isRequired,
 };

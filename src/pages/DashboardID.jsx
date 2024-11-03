@@ -8,9 +8,9 @@ export default function DashboardID() {
     const { id } = useParams();
 
     return (
-        <div>
-            <DownloadMarkdown id={id} />
+        <>
+            {/* <DownloadMarkdown id={id} /> */}
             <Markdown />
-        </div>
+        </>
     )
 }

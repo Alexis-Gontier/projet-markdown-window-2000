@@ -15,7 +15,7 @@ Membres du groupe :
 - **Alexis Hu**
    - Github: [https://github.com/Bagharia](https://github.com/Bagharia)
 
-- **Charles**
+- **Charles Grossin**
    - Github: [https://github.com/chary85](https://github.com/chary85)
 
 ## Installation

@@ -38,7 +38,7 @@ Membres du groupe :
 ## Démarrage
 Pour lancer l'application, utilisez la commande suivante :
 
-```bash
-npm run dev
-```
+   ```bash
+   npm run dev
+   ```
 Cela ouvrira l'application dans votre navigateur par défaut à l'adresse `http://localhost:5173`.

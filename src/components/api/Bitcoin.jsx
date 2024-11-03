@@ -14,7 +14,7 @@ const BitcoinPrice = () => {
   }, []);
 
   return (
-    <div className="relative w-96 bg-[#D7D0C8] border border-red-500 animate-slideIn after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-px after:bg-[#000]">
+    <div className="relative w-96 min-h-10 bg-[#D7D0C8] flex items-center animate-slideIn after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-px after:bg-[#000]">
       <div className="p-px">
         <div className="w-full h-full flex flex-col items-center p-4">
         <h2 className="text-lg font-bold text-center">Valeur du bitcoin:</h2>

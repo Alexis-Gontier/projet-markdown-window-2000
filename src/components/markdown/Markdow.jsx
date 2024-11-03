@@ -13,12 +13,13 @@ function Markdown() {
     }
 
     return (
-        <div id="content">
+        <div id="content" className="z-10">
             <textarea
                 value={input}
                 onChange={gererInput}
                 rows="10"
                 cols="500"
+                className="z-100"
             />
             <div style={{border: '1px solid #CCC', borderRadius: '3px', minHeight: "150px"}} dangerouslySetInnerHTML={{ __html: marked.parse(input) }} />
         </div>

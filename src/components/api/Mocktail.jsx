@@ -22,7 +22,7 @@ const MocktailDuJour = () => {
   }, []);
 
   return (
-    <div className="absolute top-[120px] right-5 w-96 bg-[#D7D0C8] border border-red-500 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-px after:bg-[#000]">
+    <div className="absolute top-[120px] right-5 w-96 bg-[#D7D0C8] flex items-center after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-px after:bg-[#000]">
       <div className="p-px">
         <div className="w-full h-8 px-2 py-0 bg-gradient-to-r from-[#000181] to-[#1084d0] flex justify-between items-center">
           <p className="text-white text-base">Mocktail du jour</p>

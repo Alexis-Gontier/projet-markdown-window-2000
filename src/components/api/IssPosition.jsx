@@ -18,7 +18,7 @@ const IssPositionNow = () => {
   }, []);
 
   return (
-    <div>
+    <div className="min-h-10">
       <h2 className="text-lg font-bold text-center">Position actuelle de l'ISS :</h2>
       {issPosition && (
         <div className="flex justify-between item-center space-x-4">

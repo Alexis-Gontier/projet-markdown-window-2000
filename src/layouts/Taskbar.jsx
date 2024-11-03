@@ -23,7 +23,7 @@ function Taskbar() {
             <Line />
             <Icons />
             <Line />
-            <Btn>
+            {/* <Btn>
               <img
                 className="h-full"
                 src={IconSpeaker}
@@ -42,7 +42,7 @@ function Taskbar() {
               <span className="text-base font-normal w-48 text-start">
                 My Documents
               </span>
-            </Btn>
+            </Btn> */}
           </div>
           <div className="h-full flex justify-end items-center">
             <Clock />

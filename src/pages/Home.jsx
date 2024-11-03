@@ -6,15 +6,17 @@ import EventsDuJour from "../components/api/Events"
 import RecetteDuJour from "../components/api/Recipe"
 import MocktailDuJour from "../components/api/Mocktail"
 
+import IconDashboard from "../components/ui/Icon/IconDashboard"
 
-export default function Home(props) {
+
+export default function Home() {
   return (
     <div className="min-h-screen flex justify-center items-center">
-    <CitationDuJour/>
+    {/* <CitationDuJour/>
     <BlagueDuJour/>
     <EventsDuJour/>
     <MocktailDuJour/>
-    <RecetteDuJour/>
+    <RecetteDuJour/> */}
     </div>
   )
 }
